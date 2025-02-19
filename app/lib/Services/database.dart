@@ -7,14 +7,6 @@ import 'package:path/path.dart';
 import "package:todolist_app/Services/task.dart";
 
 class DatabaseManager {
-  // static DatabaseManager? _instance;
-
-  // DatabaseManager._();
-
-  // static Future<DatabaseManager> instance() async {
-  //   _instance ??= DatabaseManager._();
-  //   return _instance!;
-  // }
 
   static Database? _database;
 
@@ -50,7 +42,6 @@ class DatabaseManager {
 
   static Future<void> addTask(Task task) async {
     final db = await database;
-    print("add");
 
     int index = await db.insert(tableName, task.toMap());
     print("data added successfully at $index");
