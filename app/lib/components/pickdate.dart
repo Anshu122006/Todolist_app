@@ -11,15 +11,14 @@ class PickDate {
       builder: (context, child) {
         return Theme(
           data: ThemeData.light().copyWith(
-            // Background color of the calendar
             colorScheme: ColorScheme.light(
-              primary: const Color.fromARGB(255, 70, 100, 183), // Main color
+              primary: const Color.fromARGB(255, 70, 100, 183),
               onPrimary: const Color.fromARGB(
-                  255, 77, 77, 77), // Text color on buttons
+                  255, 77, 77, 77),
               surface: const Color.fromARGB(
-                  255, 185, 210, 253), // Calendar background
+                  255, 185, 210, 253),
               onSurface: const Color.fromARGB(
-                  255, 90, 90, 90), // Text color inside the calendar
+                  255, 90, 90, 90),
             ),
           ),
           child: Container(
@@ -35,7 +34,6 @@ class PickDate {
                     spreadRadius: 2,
                     offset: Offset(2, 2)),
               ],
-              // border: Border.all(color: Colors.amber, width: 2)
             ),
             child: child!,
           ),
